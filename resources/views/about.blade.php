@@ -102,7 +102,7 @@
                         <p>
                             {{ $row->description}}
                         </p>
-                        <a href="#contact" class="btn btn-primary mt-3"><i class="fas fa-envelope"></i> Contact Me</a>
+                        <a href="contact" class="btn btn-primary mt-3"><i class="fas fa-envelope"></i> Contact Me</a>
                     </div>
                 </div>
             </div>
