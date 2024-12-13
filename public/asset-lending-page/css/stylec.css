@@ -1,0 +1,125 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.certificates {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.certificates h2 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.certificate-item .card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item .card:hover {
+    transform: translateY(-10px);
+ 
+}
+
+.card-body {
+    padding: 30px;
+    background: #f8f9fa;
+}
+
+.certificate-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.certificate-thumbnail {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.certificate-pdf {
+    width: 80%;
+    height: 300px;
+    border: none;
+    margin: 15px 0;
+    
+}
+
+.certificate-details {
+text-align: left; /* Menyelaraskan teks ke kiri */
+margin-left: 20px; /* Memberikan sedikit jarak dari sisi kiri */
+}
+
+
+.certificate-details p {
+font-size: 16px;
+color: #34495e;
+margin: 10px 0;
+line-height: 1.6;
+}
+
+.certificate-details i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.certificate-details .issued-by,
+.certificate-details .issued-at,
+.certificate-details .certificate-description {
+    font-size: 16px;
+    color: #7f8c8d;
+}
+
+.certificate-file {
+    margin-top: 15px;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.certificate-file:hover {
+    background-color: #2980b9;
+}
+
+.certificate-file i {
+    margin-right: 10px;
+}
+
+
+.container {
+    max-width: 1200px;
+}
+
+@media (max-width: 768px) {
+    .certificates h2 {
+        font-size: 32px;
+    }
+
+    .certificate-name {
+        font-size: 20px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+  
+}

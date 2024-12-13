@@ -1,0 +1,125 @@
+/* Body Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Main Section Styling */
+main {
+    padding: 60px 0;
+}
+
+#project {
+    background: rgba(255, 255, 255, 0.9); /* Transparansi pada area proyek */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#project h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #007bff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Project Cards Styling */
+.project-info {
+    max-width: 300px; /* Membatasi lebar kotak */
+    margin: 15px auto; /* Memberikan margin untuk memberikan jarak antar kotak */
+    padding: 10px; /* Memberikan padding internal */
+    border: 1px solid #ddd; /* Border opsional */
+    border-radius: 10px; /* Membuat sudut kotak lebih halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan */
+    transition: all 0.3s ease;
+}
+
+.project-info img {
+    width: 100%; /* Menjadikan gambar sesuai dengan ukuran kotak */
+    height: auto;
+    margin-bottom: 10px; /* Memberikan jarak antara gambar dan teks */
+    border-radius: 10px;
+}
+
+.project-info h3 {
+    font-size: 1.2rem; /* Menyesuaikan ukuran teks judul */
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.project-info p {
+    font-size: 0.9rem; /* Menyesuaikan ukuran teks deskripsi */
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.project-info .btn {
+    font-size: 0.8rem; /* Memperkecil ukuran tombol */
+    padding: 5px 10px; /* Menyesuaikan padding tombol */
+    border-radius: 20px; /* Membuat tombol terlihat lebih modern */
+}
+
+/* Hover Effect */
+.project-info:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Date Styling */
+.project-date {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+.project-date i {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* Button Styling */
+.btn-primary {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0056b3, #004080);
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #project {
+        padding: 30px;
+    }
+
+    .project-info {
+        max-width: 100%; /* Kotak proyek menggunakan lebar penuh pada perangkat kecil */
+    }
+
+    .project-info img {
+        height: auto; /* Menjaga proporsi gambar */
+    }
+
+    .project-info h3 {
+        font-size: 1rem;
+    }
+
+    .project-info p {
+        font-size: 0.8rem;
+    }
+
+    .btn-primary {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}

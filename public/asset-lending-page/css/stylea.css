@@ -1,0 +1,66 @@
+body {
+    font-family: 'Arial', sans-serif;
+ 
+}
+
+/* About Section Styling */
+#about {
+padding: 80px 0; /* Menambahkan padding atas dan bawah */
+
+}
+
+#about .container {
+max-width: 960px; /* Menambahkan pembatas lebar kontainer untuk kesan yang lebih rapi */
+}
+
+#about h2 {
+font-size: 2.5rem;
+font-weight: 600;
+color: #1e88e5; /* Warna teks yang lebih cerah */
+margin-bottom: 25px; /* Jarak bawah yang lebih besar untuk memberi ruang */
+}
+
+#about p {
+font-size: 1.2rem;
+line-height: 1.8;
+color: #555;
+}
+
+#about .btn {
+padding: 10px 25px;
+font-size: 1.1rem;
+border-radius: 30px; /* Membuat tombol lebih bundar */
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Memberikan efek bayangan lembut pada tombol */
+transition: all 0.3s ease; /* Efek transisi saat hover */
+}
+
+#about .btn:hover {
+background-color: #1e88e5;
+color: #fff;
+transform: translateY(-2px); /* Efek tombol melayang saat hover */
+}
+
+#about .col-md-4 img {
+width: 220px; /* Membesarkan ukuran gambar */
+height: 220px;
+object-fit: cover;
+border: 5px solid #fff; /* Menambahkan border putih di sekitar gambar */
+box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1); /* Efek bayangan pada gambar */
+transition: transform 0.3s ease; /* Efek zoom pada gambar */
+}
+
+#about .col-md-4 img:hover {
+transform: scale(1.05); /* Efek zoom in pada gambar saat hover */
+}
+
+
+/* Button Styling */
+.btn-primary {
+    background-color: #1e88e5;
+    border-color: #1e88e5;
+}
+
+.btn-primary:hover {
+    background-color: #155fa0;
+    border-color: #155fa0;
+}
