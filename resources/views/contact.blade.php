@@ -72,45 +72,45 @@
             
                 <!-- Contact Form -->
                 <div class="col-lg-8">
-                    <form class="row contact_form" action="{{ route('admin.contacts.store') }}" method="post" id="contactForm" novalidate="novalidate">
-                        @csrf
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
-                            </div>
+                <form class="row contact_form" action="{{ route('admin.contacts.store') }}" method="post" id="contactForm" novalidate="novalidate">
+                    @csrf
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
                         </div>
-                        <div class="col-md-6 mb-3">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
-                            </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
                         </div>
-                        <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                                <textarea class="form-control" name="social_media" id="message" rows="5" placeholder="Enter Message" required></textarea>
-                            </div>
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        <div class="form-group">
+                            <textarea class="form-control" name="social_media" id="message" rows="5" placeholder="Enter Message" required></textarea>
                         </div>
-                        <div class="col-md-12 text-right">
-                            <button type="submit" class="primary_btn" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
-                                <span>Send Message</span>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="primary_btn" style="background-color: #007bff; color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold;">
+                            <span>Send Message</span>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
-    </section>
-    
-    @if (session('success'))
-    <script>
-        Swal.fire({
-            icon: 'success',
-            title: 'Message Sent!',
-            text: '{{ session('success') }}',
-            showConfirmButton: true,
-            confirmButtonColor: '#007bff',
-        });
-    </script>
-    @endif
+    </div>
+</section>
+
+@if (session('success'))
+<script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Message Sent!',
+        text: '{{ session('success') }}',
+        showConfirmButton: true,
+        confirmButtonColor: '#007bff',
+    });
+</script>
+@endif
 
 
     <!--================Footer Area =================-->
@@ -118,17 +118,7 @@
     <!--================End Footer Area =================-->
     
     <!-- Menampilkan SweetAlert jika ada pesan sukses -->
-    @if (session('success'))
-    <script>
-        Swal.fire({
-            icon: 'success',
-            title: 'Message Sent!',
-            text: '{{ session('success') }}',
-            showConfirmButton: true,
-            confirmButtonColor: '#007bff',
-        });
-    </script>
-    @endif
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
