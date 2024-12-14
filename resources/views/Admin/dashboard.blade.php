@@ -21,13 +21,18 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900">
+                <!-- Tambahkan div pembungkus dengan overflow-scroll -->
+                <div class="p-6 text-gray-900" style="max-height: 500px; overflow-y: auto;">
                     {{ __("You're logged in!") }}
+                    <!-- Contoh konten panjang -->
+                    <p></p>
+                    <p>... (Scroll Kebawah untuk halaman admin) ...</p>
                 </div>
             </div>
         </div>
     </div>
 </x-app-layout>
+
 
 <body id="page-top">
 
